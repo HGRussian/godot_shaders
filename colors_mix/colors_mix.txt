@@ -1,0 +1,5 @@
+uniform float percentfull;
+uniform color emptyColor;
+uniform color fullColor;
+color currentColor = mix(emptyColor, fullColor, percentfull);
+COLOR = tex(TEXTURE, UV) * currentColor;
